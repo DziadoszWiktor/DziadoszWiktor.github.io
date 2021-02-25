@@ -1,36 +1,151 @@
-<!-- 
-    index.html root folder name (convention)
-    Hyper text markup language
--->
-
-<!DOCTYPE html><!--Information for the browser html file-->
+<DOCTYPE html/>
 <html>
 
     <head>
-        <meta charset="UTF-8">
-        <!-- defining metadata about file, information about page (for example google can read that while searching)-->
-        <mate name="description" content="Tutorial web page">
-        <title>new page</title>
+        <title>web page</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+            body {
+                /*background-color:rgba(117, 117, 117, 0.144);*/
+                /*background-image: linear-gradient(to top,white,rgba(117, 117, 117, 0.144));*/
+                font-family: 'Fredoka One', cursive;
+                /*font-family: 'Press Start 2P', cursive;*/
+                /*background: -webkit-gradient(linear, left bottom, left top,from(white), to(rgba(117, 117, 117, 0.144))) fixed;*/
+                background-image: url("img1.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .flex-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            }
+            .fig1 {
+                width: 80%;
+                height: 100%;
+                background-color: rgb(255, 255, 255);
+                margin-top: 10%;
+                display: flex;
+                /*justify-content: center;*/
+                align-items: center;
+                border-radius: 10px;
+                flex-direction: column;
+            }
+            .fig2 {
+                width: 80%;
+                height: 80px;
+                /*background-color: rgba(117, 117, 117, 0.144);*/
+                background-color: rgb(49, 49, 49);
+                margin-top: 10%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                border-radius: 10px;
+                margin-top: -20px;
+            }
+            .para1 {
+                font-size: 50px;
+                margin-top: -25px;
+                color: white;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: black;
+            }
+            .nav1 {
+                width: 500px;
+                height: 40px;
+                background-color: rgb(66, 66, 66);
+                margin-top: -25px;
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+
+            }
+            .link1 {
+                width: 100px;
+                height: 25px;
+                top: 20px;
+                left: 50px;
+                transform: translate(-50%, -50%);
+
+                border-radius: 10px;
+                text-align: center;
+            }
+            .link2 {
+                width: 100px;
+                height: 25px;
+                top: 20px;
+                left: 180px;
+                transform: translate(-50%, -50%);
+                border-radius: 10px;
+                text-align: center;
+            }
+            .link3 {
+                width: 100px;
+                height: 25px;
+                top: 20px;
+                left: 320px;
+                transform: translate(-50%, -50%);
+                border-radius: 10px;
+                text-align: center;
+            }
+            .link4 {
+                width: 100px;
+                height: 25px;
+                top: 20px;
+                left: 450px;
+                transform: translate(-50%, -50%);
+                border-radius: 10px;
+                text-align: center;
+            }
+            #centav {
+                float:inline-start;
+                position: absolute;
+            }
+            a:hover {
+                font-size: 20px;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;
+            }
+            .footer {
+                background-color: rgb(30, 30, 30);
+                width: 100%;
+                height: 100px;
+                margin-top: 100px;
+                border-radius: 10px;
+            }
+        </style>
     </head>
 
     <body>
-        <!-- classic input-->
-        <input type="text" value="enter input"/>
-        <!-- censored-->
-        <input type="password"/>
-        <!-- tect area-->
-        <textarea rows="10" cols="30">
-        </textarea>
-        <!-- date -->
-        <input type="date">
-        <!-- range -->
-        <input type="range">
-        <!-- file -->
-        <input type="file">
-        <!-- choose -->
-        <input type="checkbox">
-        <!-- button radio choose -->
-        <input name="btn" type="radio">
+        <div class="flex-container">
+            <div class="fig1">
+                <div class="fig2">
+                    <p class="para1">Wik's Portfolio</p>
+                </div>
+                <div class="nav1">
+                    <div class="link1 " id="centav"><a href="#">Home</a></div>
+                    <div class="link2" id="centav"><a href="#">Degrees</a></div>
+                    <div class="link3" id="centav"><a href="#">Projects</a></div>
+                    <div class="link4" id="centav"><a href="#">Contact</a></div>
+                </div>
+                <div class="smt"></div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                
+            </div>
+        </footer>
     </body>
+
 
 </html>
